@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Kaviareň Manažér – dobrá káva, lepší deň</title>
+  <meta name="description" content="Štýlová kaviareň v Ružomberku. Špičková káva, tiché študijné zákutia, rýchle Wi-Fi.">
+
+  <!-- Open Graph pre zdieľanie -->
+  <meta property="og:title" content="Kaviareň Manažér" />
+  <meta property="og:description" content="Štýlová kaviareň s Wi-Fi a priestorom na učenie." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="og-image.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Preskočiť na obsah</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#" aria-label="Kaviareň Manažér – domov">Kaviareň <span>Manažér</span></a>
+
+      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Otvoriť menu">
+        ☰
+      </button>
+
+      <nav id="nav" class="nav" aria-label="Hlavná navigácia">
+        <ul>
+          <li><a href="#benefity">Benefity</a></li>
+          <li><a href="#onas">O nás</a></li>
+          <li><a href="#cennik">Cenník</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">Dobrú kávu. Lepší deň.</h1>
+          <p>Štýlová kaviareň v Ružomberku s rýchlou Wi-Fi, tichými zákutiami na učenie a výberovou kávou.</p>
+          <a class="btn-primary" href="#kontakt">Rezervovať miesto</a>
+        </div>
+        <figure class="hero-media">
+          <img src="hero.jpg" alt="Šálka výberovej kávy na drevenom stole" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <section id="benefity" class="section" aria-labelledby="benefity-title">
+      <div class="container">
+        <h2 id="benefity-title">Prečo k nám</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Výberová káva</h3>
+            <p>Pražená na mieru, stála kvalita, sezónne single origin zrná.</p>
+          </article>
+          <article class="card">
+            <h3>Priestor na učenie</h3>
+            <p>Tiché sedenie, zásuvky pri stoloch, rýchla Wi-Fi.</p>
+          </article>
+          <article class="card">
+            <h3>Vernostný program</h3>
+            <p>Každý 6. nápoj zdarma pre študentov a učiteľov.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="onas" class="section alt" aria-labelledby="onas-title">
+      <div class="container narrow">
+        <h2 id="onas-title">O nás</h2>
+        <p>Veríme v jednoduchú kvalitu a priateľský servis. Náš tím baristov spája učenie, podnikanie a lásku ku káve.</p>
+      </div>
+    </section>
+
+    <section id="cennik" class="section" aria-labelledby="cennik-title">
+      <div class="container">
+        <h2 id="cennik-title">Cenník</h2>
+        <div class="price-grid">
+          <div class="price-item">
+            <h3>Espresso</h3>
+            <p class="price">2,20 €</p>
+          </div>
+          <div class="price-item">
+            <h3>Cappuccino</h3>
+            <p class="price">2,80 €</p>
+          </div>
+          <div class="price-item">
+            <h3>Cold brew</h3>
+            <p class="price">3,50 €</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section alt" aria-labelledby="kontakt-title">
+      <div class="container">
+        <h2 id="kontakt-title">Napíš nám</h2>
+        <form id="contactForm" class="form" novalidate>
+          <label>
+            Meno
+            <input type="text" name="name" placeholder="Vaše meno" required />
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" placeholder="meno@domena.sk" required />
+          </label>
+          <label>
+            Správa
+            <textarea name="message" rows="5" placeholder="Sem napíšte správu" required></textarea>
+          </label>
+          <button class="btn-primary" type="submit">Odoslať</button>
+          <p id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Kaviareň Manažér</p>
+      <nav aria-label="Footer">
+        <a href="#onas">O nás</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#" rel="nofollow">Zásady súkromia</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
